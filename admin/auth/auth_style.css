@@ -1,0 +1,151 @@
+/* الألوان المستوحاة من الهوية البصرية للشركة */
+:root {
+    --main-teal: #347a94;    /* لون الشعار */
+    --soft-beige: #f3e9dc;   /* لون الخلفية الناعم */
+    --dark-text: #2c3e50;
+    --pure-white: #ffffff;
+    --error-red: #e74c3c;
+}
+
+body.sweet-theme-body {
+    background: radial-gradient(circle at top right, var(--soft-beige), #ffffff);
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.main-auth-container {
+    width: 90%;
+    max-width: 420px;
+    padding: 20px 0;
+}
+
+.auth-glass-card {
+    background: var(--pure-white);
+    padding: 40px 30px;
+    border-radius: 30px;
+    box-shadow: 0 20px 40px rgba(52, 122, 148, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    transition: transform 0.3s ease;
+}
+
+.brand-section {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.brand-logo {
+    width: 100px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.auth-title {
+    color: var(--main-teal);
+    font-size: 24px;
+    margin: 0;
+    font-weight: 800;
+}
+
+.auth-subtitle {
+    color: #7f8c8d;
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+.auth-custom-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-field-group {
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+.input-field-group label {
+    display: block;
+    font-size: 14px;
+    color: var(--dark-text);
+    margin-bottom: 8px;
+    font-weight: 600;
+    padding-right: 5px;
+}
+
+.input-field-group input {
+    width: 100%;
+    padding: 14px 18px;
+    border: 2px solid #f1f1f1;
+    border-radius: 15px;
+    background: #fdfdfd;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+    text-align: right;
+}
+
+.input-field-group input:focus {
+    border-color: var(--main-teal);
+    outline: none;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(52, 122, 148, 0.05);
+}
+
+.submit-action-btn {
+    background: var(--main-teal);
+    color: white;
+    padding: 16px;
+    border: none;
+    border-radius: 50px; /* تصميم دائري مثل أزرار المتجر */
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(52, 122, 148, 0.2);
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.submit-action-btn:hover {
+    background: #2a6378;
+    transform: translateY(-2px);
+    box-shadow: 0 15px 25px rgba(52, 122, 148, 0.3);
+}
+
+.alert-box-error {
+    background: #fff5f5;
+    border-right: 5px solid var(--error-red);
+    color: var(--error-red);
+    padding: 12px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    font-size: 14px;
+    text-align: right;
+}
+
+.auth-links-footer {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 14px;
+    color: #7f8c8d;
+}
+
+.auth-links-footer a {
+    color: var(--main-teal);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.auth-links-footer a:hover {
+    text-decoration: underline;
+}
+
+/* تحسين العرض للهواتف */
+@media (max-width: 480px) {
+    .auth-glass-card {
+        padding: 30px 20px;
+    }
+}
